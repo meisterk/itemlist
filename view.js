@@ -10,8 +10,8 @@ export class View {
     let htmlList = `<ul>`;
     for (let i = 0; i < data.length; i++) {
       const itemText = data[i].text;
-      const itemDate = data[i].timeStamp;
-      const listItem = `<li>${itemText}, ${itemDate}</li>`;
+      const itemTimeStamp = data[i].timeStamp;
+      const listItem = `<li>${itemText}, ${itemTimeStamp}</li>`;
       htmlList += listItem;
     }
     htmlList += `</ul>`;
